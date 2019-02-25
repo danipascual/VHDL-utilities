@@ -11,12 +11,13 @@ File  | Commit | Description
 ------------- | ------------- | ----------
 AND_sync.vhd  | First | Ensures a pipelined AND operation of large vectors by nesting smaller ANDs.
 OR_sync.vhd  | First | Ensures a pipelined OR operation of large vectors by nesting smaller ORs.
-compare_vectors.vhd  | First | Compares if two vectors are equal. Pipelined is ensured by proper setting the size of the AND_sync entity.
-detect_change.vhd  | First | Detects a change on a vector. Pipelined is ensured by proper setting the size of the compare_vectors entity.
+compare_vectors.vhd  | First | Compares if two vectors are equal. Pipeline is ensured by proper setting the size of the AND_sync entity.
+detect_change.vhd  | First | Detects a change on a vector. Pipeline is ensured by proper setting the size of the compare_vectors entity.
 strobe_adapter_fast2slow.vhd  | First | Adapts a strobe line from a fast clock to a slower clock.
 strobe_adapter_slow2fast.vhd  | First | Adapts a strobe line from a slow clock to a faster clock.
 priority_encoder.vhd  | First | Finds the MSB of a vector. Pipeline is not ensured if the vector is too large.
-priority_encoder_nested.vhd  | First | Finds the MSB of a vector. Pipeline is ensured by nesting compare_vectors and by  proper setting their size.
+priority_encoder_nested.vhd  | First | Finds the MSB of a vector. Pipeline is ensured by nesting priority_encoder and by  proper setting their size.
+sync_SIGNALS.vhd  | Second | Sync signals with same rate.
 
 ## Licence
 You may find a specific licence files in each directory.

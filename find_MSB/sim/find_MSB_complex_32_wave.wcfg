@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/nameg/Dropbox/Phd/MIR_FPGA_X310/VHDL-UTILS/find_MSB_complex_32_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bip_usecase_utils_pkg_v2_0" />
+            <top_module name="bip_utils_pkg_v2_0" />
+            <top_module name="c_addsub_pkg_v11_0" />
+            <top_module name="c_reg_fd_v11_0_comp" />
+            <top_module name="find_msb_complex_32_tb" />
+            <top_module name="math_real" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+            <top_module name="xbip_addsub_v2_0_comp" />
+            <top_module name="xbip_pipe_v2_0_xst_comp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/find_msb_complex_32_tb/input_signal_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_signal_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_signal_1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/input_signal_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_signal_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_signal_2[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/enable_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_in</obj_property>
+      <obj_property name="ObjectShortName">enable_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/strobe_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_in</obj_property>
+      <obj_property name="ObjectShortName">strobe_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/areset_aux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">areset_aux</obj_property>
+      <obj_property name="ObjectShortName">areset_aux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/strobe_in_aux" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_in_aux</obj_property>
+      <obj_property name="ObjectShortName">strobe_in_aux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/output_signal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_signal[4:0]</obj_property>
+      <obj_property name="ObjectShortName">output_signal[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/valid_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/strobe_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_out</obj_property>
+      <obj_property name="ObjectShortName">strobe_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/strobe_boc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_boc</obj_property>
+      <obj_property name="ObjectShortName">strobe_boc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/clock_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/n" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">n</obj_property>
+      <obj_property name="ObjectShortName">n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/x" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">x</obj_property>
+      <obj_property name="ObjectShortName">x</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider16" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_1/input_signal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_signal[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_signal[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_1/strobe_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_in</obj_property>
+      <obj_property name="ObjectShortName">strobe_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_1/output_signal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_signal[4:0]</obj_property>
+      <obj_property name="ObjectShortName">output_signal[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_1/strobe_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_out</obj_property>
+      <obj_property name="ObjectShortName">strobe_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider16" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_2/input_signal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_signal[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_signal[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_2/strobe_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_in</obj_property>
+      <obj_property name="ObjectShortName">strobe_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_2/output_signal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_signal[4:0]</obj_property>
+      <obj_property name="ObjectShortName">output_signal[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/priority_encoder_nested_inst_2/strobe_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_out</obj_property>
+      <obj_property name="ObjectShortName">strobe_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider16" type="divider">
+      <obj_property name="label">New Divider</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/max_vector_inst/input_signal_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_signal_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input_signal_1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/max_vector_inst/input_signal_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">input_signal_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">input_signal_2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/max_vector_inst/strobe_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_in</obj_property>
+      <obj_property name="ObjectShortName">strobe_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/max_vector_inst/SUBS/s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/max_vector_inst/output_signal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output_signal[7:0]</obj_property>
+      <obj_property name="ObjectShortName">output_signal[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/find_msb_complex_32_tb/uut/max_vector_inst/strobe_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strobe_out</obj_property>
+      <obj_property name="ObjectShortName">strobe_out</obj_property>
+   </wvobject>
+</wave_config>

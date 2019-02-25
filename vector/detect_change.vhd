@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------------
--- Detects a change on a vector. Pipelined is ensured by proper setting the size of the
+-- Detects a change on a vector. Pipeline is ensured by proper setting the size of the
 -- compare_vectors entity.
 --------------------------------------------------------------------------------------
 -- **** INPUTS ****

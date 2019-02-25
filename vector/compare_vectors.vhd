@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------------
--- Compares if two vectors are equal. Pipelined is ensured by proper setting the size
+-- Compares if two vectors are equal. Pipeline is ensured by proper setting the size
 -- of the AND_sync entity.
 --------------------------------------------------------------------------------------
 -- **** INPUTS ****

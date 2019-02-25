@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------------
--- Finds the MSB of a vector. Pipeline is ensured by nesting compare_vectors and by 
+-- Finds the MSB of a vector. Pipeline is ensured by nesting priority_encoder and by 
 -- proper setting their size.
 -- Latency = WIDTH_IN/WEI+4 ?
 --------------------------------------------------------------------------------------
