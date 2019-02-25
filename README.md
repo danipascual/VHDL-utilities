@@ -20,6 +20,11 @@ priority_encoder_nested.vhd  | First | Finds the MSB of a vector. Pipeline is en
 sync_SIGNALS.vhd  | Second | Sync signals with same rate.
 find_MSB_complex_32.vhd  | Second | Finds the MSB of a 32 bits complex signal (i.e. 32 bits I + 32 bits Q). Pipeline is ensured by proper setting the priority_encoder_nested.
 find_MSB_complex_epoch_32.vhd  | Second | Finds the MSB of a 32 bits complex signal (i.e. 32 bits I + 32 bits Q) with a non-sliding window of "EPOCH" samples. Pipeline is ensured by proper setting the priority_encoder_nested.
+agc_16_complex.vhd  | Third | Continous AGC of a 16 bits complex signal (i.e. 16 bits I + 16 bits Q).
+
+AGC: Automatic Control Gain
+MSB: Most Significant Bit
+
 
 ## Licence
 You may find a specific licence files in each directory.
