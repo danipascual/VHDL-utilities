@@ -1,4 +1,7 @@
 --------------------------------------------------------------------------------------
+-- Continuous Automatic Control Gain (AGC) of a 16 bits complex signal
+-- (i.e. 16 bits I + 16 bits Q).
+--------------------------------------------------------------------------------------
 -- Author: Daniel Pascual (daniel.pascual at protonmail.com) 
 -- Copyright 2017 Daniel Pascual
 -- License: GNU GPLv3

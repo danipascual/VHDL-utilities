@@ -59,7 +59,8 @@ entity priority_encoder is
 			strobe_out : out std_logic; 	
 			clock : in std_logic;
 			reset : in std_logic;
-			strobe_in : in std_logic); 
+			strobe_in : in std_logic;
+			output_MSB : out std_logic_vector(WIDTH_IN-1 downto 0));  -- unsigned
 end priority_encoder;
 
 architecture Behavioral of priority_encoder is
@@ -78,7 +79,22 @@ architecture Behavioral of priority_encoder is
 				end if;
 			end loop;
 			return var;	 -- zero
-	end find_MSB;	
+	end find_MSB;
+
+
+	function find_MSB_vector(input_signal : STD_LOGIC_vector) return STD_LOGIC_vector is	
+
+		variable var : std_logic_vector(WIDTH_IN-1 downto 0) := (others => '0');
+		
+		begin
+			for j in WIDTH_IN-1 downto 0 loop
+				if input_signal(j) = '1' then
+					var(j) := '1';
+					return var;
+				end if;
+			end loop;
+			return var;	 -- zero
+	end find_MSB_vector;	
 	
 	begin
 		process(clock)
@@ -89,6 +105,7 @@ architecture Behavioral of priority_encoder is
 						valid_out <= '0';
 						output_signal <= (others => '0');
 						strobe_out <= '0';
+						output_MSB <= (others => '0');
 					else			
 					
 						-- sync outputs with strobe_in
@@ -96,17 +113,20 @@ architecture Behavioral of priority_encoder is
 						valid_out <= '0';	 
 						strobe_out <= '0'; 
 					
-						if (enable_in = '1') then
-							if strobe_in = '1' then
+						if (enable_in = '1') then				
+							if strobe_in = '1' then				-- not really needed..
 								if (input_signal = 0) then
 									enable_out <= '1';
 									valid_out <= '0';	
 									output_signal <= (others => '0'); 
-									strobe_out <= '1';							
+									strobe_out <= '1';
+									output_MSB <= (others => '0');									
 								else
 									enable_out <= '0';
 									valid_out <= '1';
-									output_signal <= std_logic_vector(to_unsigned(find_MSB(input_signal), output_signal'length));							
+									output_signal <= std_logic_vector(to_unsigned(find_MSB(input_signal), output_signal'length));
+									output_MSB <= find_MSB_vector(input_signal);
+									
 									strobe_out <= '1';
 								end if; -- input_signal = 0							
 							end if; -- strobe_in

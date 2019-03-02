@@ -4,6 +4,7 @@
 
 # Dani
 *.asv
+tmp
 
 isim/
 *.cmd

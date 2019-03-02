@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------------
--- Finds the MSB of a 32 bits complex signal (i.e. 32 bits I + 32 bits Q). Pipeline is
--- ensured by proper setting the priority_encoder_nested
+-- Finds the MSB of a 32 bits complex unsigned signal (i.e. 32 bits I + 32 bits Q). 
+-- Pipeline is ensured by proper setting the priority_encoder_nested
 --------------------------------------------------------------------------------------
 -- Author: Daniel Pascual (daniel.pascual at protonmail.com) 
 -- Copyright 2017 Daniel Pascual

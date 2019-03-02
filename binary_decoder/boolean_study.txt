@@ -1,0 +1,129 @@
+BooleanConvert[
+BooleanMinimize[
+BooleanFunction[{
+{False, False}->{False,False,False,True},
+{False, True}->{False,False,True,False},
+{True, False}->{False,True,False,False},
+{True, True}->{True,False,False,False}},
+{x,y}]
+]
+, "AND"]
+
+
+BooleanConvert[
+BooleanMinimize[
+BooleanFunction[{
+{False, False}->{False,False,False,True},
+{False, True}->{False,False,True,True},
+{True, False}->{False,True,True,True},
+{True, True}->{True,True,True,True}},
+{x,y}]
+]
+, "OR"]
+
+
+
+
+
+
+
+
+BooleanConvert[
+BooleanMinimize[
+BooleanFunction[{
+{False, False, False}->{False,False,False,False,False,False,False,True},
+{False, False, True}->{False,False,False,False,False,False,True,False},
+{False, True, False}->{False,False,False,False,False,True,False,False},
+{False, True, True}->{False,False,False,False,True,False,False,False},
+{True, False, False}->{False,False,False,True,False,False,False,False},
+{True, False, True}->{False,False,True,False,False,False,False,False},
+{True, True, False}->{False,True,False,False,False,False,False,False},
+{True, True, True}->{True,False,False,False,False,False,False,False}},
+{x,y,z}]
+]
+, "AND"]
+
+
+BooleanConvert[
+BooleanMinimize[
+BooleanFunction[{
+{False, False, False}->{False,False,False,False,False,False,False,False},
+{False, False, True}->{False,False,False,False,False,False,False,True},
+{False, True, False}->{False,False,False,False,False,False,True,False},
+{False, True, True}->{False,False,False,False,False,True,False,False},
+{True, False, False}->{False,False,False,False,True,False,False,False},
+{True, False, True}->{False,False,False,True,False,False,False,False},
+{True, True, False}->{False,False,True,False,False,False,False,False},
+{True, True, True}->{False,True,False,False,False,False,False,False}},
+{x,y,z}]
+]
+, "AND"]
+
+
+
+
+
+
+
+
+--------------MARGINAL DECODER-------------------------
+
+
+BooleanConvert[
+BooleanMinimize[
+BooleanFunction[{
+{False, False}->{False,False,False,True},
+{False, True}->{False,False,True,True},
+{True, False}->{False,True,True,True},
+{True, True}->{True,True,True,True},
+{x,y}]
+]
+, "OR"]
+
+
+
+
+BooleanConvert[
+BooleanMinimize[
+BooleanFunction[{
+{False, False, False}->{False,False,False,False,False,False,False,True},
+{False, False, True}->{False,False,False,False,False,False,True,True},
+{False, True, False}->{False,False,False,False,False,True,True,True},
+{False, True, True}->{False,False,False,False,True,True,True,True},
+{True, False, False}->{False,False,False,True,True,True,True,True},
+{True, False, True}->{False,False,True,True,True,True,True,True},
+{True, True, False}->{False,True,True,True,True,True,True,True},
+{True, True, True}->{True,True,True,True,True,True,True,True}},
+{x,y,z}]
+]
+, "OR"]
+
+
+
+
+
+BooleanConvert[
+BooleanMinimize[
+BooleanFunction[{
+{False,False, False, False}->{False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,True},
+{False,False, False, True}->{False,False,False,False,False,False,False,False,False,False,False,False,False,False,True,True},
+{False,False, True, False}->{False,False,False,False,False,False,False,False,False,False,False,False,False,True,True,True},
+{False,False, True, True}->{False,False,False,False,False,False,False,False,False,False,False,False,True,True,True,True},
+{False,True, False, False}->{False,False,False,False,False,False,False,False,False,False,False,True,True,True,True,True},
+{False,True, False, True}->{False,False,False,False,False,False,False,False,False,False,True,True,True,True,True,True},
+{False,True, True, False}->{False,False,False,False,False,False,False,False,False,True,True,True,True,True,True,True},
+{False,True, True, True}->{False,False,False,False,False,False,False,False,True,True,True,True,True,True,True,True},
+{True,False, False, False}->{False,False,False,False,False,False,False,True,True,True,True,True,True,True,True,True},
+{True,False, False, True}->{False,False,False,False,False,False,True,True,True,True,True,True,True,True,True,True},
+{True,False, True, False}->{False,False,False,False,False,True,True,True,True,True,True,True,True,True,True,True},
+{True,False, True, True}->{False,False,False,False,True,True,True,True,True,True,True,True,True,True,True,True},
+{True,True, False, False}->{False,False,False,True,True,True,True,True,True,True,True,True,True,True,True,True},
+{True,True, False, True}->{False,False,True,True,True,True,True,True,True,True,True,True,True,True,True,True},
+{True,True, True, False}->{False,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True},
+{True,True, True, True}->{True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True}},
+{x,y,z,k}]
+]
+, "OR"]
+
+
+

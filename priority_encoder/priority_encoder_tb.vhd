@@ -40,8 +40,8 @@ ARCHITECTURE behavior OF priority_encoder_tb IS
 			strobe_out : out std_logic; 
          clock : IN  std_logic;
          reset : IN  std_logic;
-			strobe_in : in std_logic
-        );
+			strobe_in : in std_logic;
+			output_MSB : out std_logic_vector(8-1 downto 0)); 
     END COMPONENT;
     
  
@@ -61,6 +61,7 @@ ARCHITECTURE behavior OF priority_encoder_tb IS
    signal output_signal : std_logic_vector(2 downto 0);
    signal enable_out : std_logic;
    signal strobe_out : std_logic;
+	signal output_MSB : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
 	--constant clock_period : time := 2.5 ns;	-- 400 MHz
@@ -78,7 +79,8 @@ BEGIN
           strobe_out => strobe_out,
           clock => clock,
           reset => reset,
-			 strobe_in => strobe_in
+			 strobe_in => strobe_in,
+			 output_MSB => output_MSB
         );
 
 

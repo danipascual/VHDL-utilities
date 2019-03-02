@@ -87,7 +87,8 @@ architecture Behavioral of priority_encoder_nested is
 				strobe_out : out std_logic; 				 
 				clock : in std_logic;
 				reset : in std_logic;
-				strobe_in : in std_logic); 
+				strobe_in : in std_logic;
+				output_MSB : out std_logic_vector(WIDTH_IN-1 downto 0));
 	end component;	
 
 	begin
@@ -104,7 +105,10 @@ architecture Behavioral of priority_encoder_nested is
 							strobe_out => open,
 							clock => clock,
 							reset => reset,
-							strobe_in => strobe_in_vector(i));
+							strobe_in => strobe_in_vector(i),
+--							output_MSB => output_MSB_matrix(i)(WEI-1 downto 0)
+							output_MSB => open
+							);
 		end generate pe_chain;
 		
 		-- input_signal to input_matrix
@@ -136,6 +140,10 @@ architecture Behavioral of priority_encoder_nested is
 		end generate LSB;
 		
 		strobe_out <= strobe_out_vector(LATENCY-1);
+		
+--		AUX : for k in N-1 downto 0
+--			output_MSB_out(k* downto ) <= output_MSB_matrix(k)(WEI-1 downto 0);
+--		end generate AUX;
 		
 		process(clock)
 			begin		
